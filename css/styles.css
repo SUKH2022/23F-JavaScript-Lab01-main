@@ -1,12 +1,49 @@
 @charset "utf-8";
 
-body {
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* body {
     font-family: helvetica, sans-serif;
     width: 350px;
+} */
+
+h1{
+    font-size: 45px;
+    font-weight: 500;
+    margin-top: -50px;
+    margin-bottom: 50px;
 }
+
+.hero h1 span{
+    color: #ff2963;
+}
+
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #010758,#490d61);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fefefe;
+}
+
 
 label {
     font-weight: bold;
+}
+.customize{
+    color: #fefefe;
+    background: #403d84;
+    height: 50px;
+    padding: 9px 20px;
+    border-radius: 35px;
 }
 
 div {
@@ -16,11 +53,40 @@ div {
 input[type="text"] {
     padding: 5px;
     width: 150px;
+    background: none;
+    color: #fefefe;
+    font-size: medium;
+    /* border: none; */
+}
+.space{
+    margin: 1rem;
+}
+button{
+    background: #ff2963;
+    color: #fefefe;
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 35px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
 }
 /* Hide the output paragraph until the user has submitted the form */
 p {
-    background: #ffc125;
-    color: #5e2612;
-    padding: 10px;
+    /* background: #ffc125;
+    color: #5e2612; */
+    /* padding: 10px; */
     visibility: hidden;
+}
+
+.txtarea{
+    width: 600px;
+    height: 150px;
+    background: #403d84;
+    color: #fefefe;
+    font-size: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    resize: none;
+    margin-bottom: 30px;
 }
